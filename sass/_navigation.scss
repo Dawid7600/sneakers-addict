@@ -1,0 +1,55 @@
+.navigation{
+    width: 12rem;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 45;
+    border-radius: .5rem;
+    background-color: $transparent-dark-brown-color;
+    transform: translateX(12rem);
+
+    &--active{
+        display: block; ;
+        transform: translateX(0);
+        transition: transform .3s .1s ease-in-out;
+    }
+
+    &__list{
+        list-style: none;
+        margin-top: 3rem;
+
+
+    }
+
+    &__item{
+        a{
+            text-decoration: none;
+            color: $secondary-color;
+            display: flex;
+            justify-content: center;
+
+            margin: 1.5rem auto;
+            font-size: 1.5rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: bolder;
+
+            &:hover{
+               
+                width: 80%;
+                background-color: $secondary-color;
+                color: $dark-brown-color;
+                border-radius: 1rem;
+                box-shadow: 1px 0px 5px rgba(255, 255, 255, 0.8);
+                transition:  .5s ease-in-out;
+            }
+
+            &:active{
+                transition: transform .3s linear;
+                transform: translateY(10px);
+                
+            }
+        }
+    }
+}

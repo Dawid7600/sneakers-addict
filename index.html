@@ -5,12 +5,31 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sneakers Addict</title>
-		<link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
 
 		<link rel="stylesheet" href="./css/main.css" />
+		<script src="./js/main.js" defer></script>
 	</head>
 	<body>
+		<aside class="side-drawer" id="side-drawer">
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item"><a href="#">Home</a></li>
+					<li class="navigation__item"><a href="#">About Us</a></li>
+					<li class="navigation__item"><a href="#">Features</a></li>
+					<li class="navigation__item"><a href="#">Feedback</a></li>
+					<li class="navigation__item"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</aside>
+
 		<header class="header">
+			<button class="hamburger">
+				<span class="hamburger__box">
+					<span class="hamburger__inner"></span>
+				</span>
+			</button>
+
 			<div class="logo">
 				<p class="logo-text">Sneakers<span class="logo-span">Addict</span></p>
 			</div>

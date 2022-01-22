@@ -2,10 +2,13 @@
 
 @import "./resets";
 @import "./variables";
+@import "./hamburger-btn";
+@import "./navigation";
 
 .logo {
 	display: inline-block;
-	padding: 0.5rem 1rem;
+	cursor: pointer;
+	padding: 3rem 1rem 0 1rem;
 	font-family: "Big Shoulders Display", cursive;
 	font-weight: 400;
 	font-size: 3rem;
@@ -61,6 +64,7 @@
 	}
 }
 
+
 .heading-secondary {
 	font-family: "Chakra Petch", sans-serif;
 	font-size: 1.75rem;
@@ -68,6 +72,7 @@
 	letter-spacing: 2px;
 	margin: 0.5rem;
 	text-align: center;
+
 }
 
 .section-about {
@@ -111,6 +116,8 @@
 				margin: 0.25rem;
 				width: 31%;
 				object-fit: cover;
+
+				
 			}
 		}
 	}
@@ -144,6 +151,12 @@
 
 		&__heading {
 			padding: 0.5rem 0;
+		}
+
+		&:hover{
+			transform: translateY(10px);
+			width: 70%;
+			transition: transform .5s ease--out;
 		}
 	}
 }
