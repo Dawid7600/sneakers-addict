@@ -1,0 +1,16 @@
+.button {
+	cursor: pointer;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	color: $secondary-color;
+	background-color: $brown-color;
+	padding: 0.5rem 0.25rem;
+	border-radius: 0.5rem;
+	box-shadow: 1px 0px 5px $dark-brown-color;
+
+	&:active {
+		transition: transform 0.3s linear;
+		transform: translateY(10px);
+	}
+}

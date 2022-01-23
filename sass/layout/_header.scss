@@ -1,0 +1,40 @@
+.header {
+	text-align: center;
+	height: 25rem;
+	z-index: 1;
+
+	background-image: linear-gradient(
+			to top,
+			$transparent-light-brown-color,
+			$transparent-dark-brown-color
+		),
+		url(../images/background.jpg);
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+
+	&__text-box {
+		width: 90%;
+		margin: auto;
+		font-family: "Roboto", sans-serif;
+		background: rgba(0, 0, 0, 0.3);
+		border-radius: 0.5rem;
+
+		.heading-primary {
+			color: $secondary-color;
+			margin-top: 3rem;
+			padding: 1rem;
+
+			&--main {
+				display: inline-block;
+				margin: 0.5rem 0;
+				font-weight: 400;
+			}
+			&--sub {
+				display: inline-block;
+				font-weight: 100;
+			}
+		}
+	}
+}

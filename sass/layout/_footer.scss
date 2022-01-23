@@ -1,0 +1,40 @@
+.footer {
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	padding: 1rem;
+	background: $transparent-dark-brown-color;
+	.logo {
+		padding: 1rem 0;
+		width: 90%;
+		border-bottom: 2px solid $secondary-color;
+	}
+
+	&-box {
+		&__paragraph {
+			padding: 0.5rem;
+		}
+	}
+
+	&-socials {
+		cursor: pointer;
+		margin: auto;
+		width: 10rem;
+		border-top: 2px solid $secondary-color;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+
+		&--photo {
+			padding: 0.5rem 0;
+			color: #fff;
+			width: 100%;
+
+			&:active {
+				transition: transform 0.3s linear;
+				transform: translateY(10px);
+			}
+		}
+	}
+}
